@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Buenas Prácticas DevOps</title>
+  <style>
+    :root {
+      --color-primario: #0ff1ce;
+      --color-fondo: #121212;
+      --color-secundario: #ff0066;
+      --color-texto: #f1f1f1;
+      --sombra: 0 0 20px rgba(0,255,204,0.5);
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--color-fondo);
+      color: var(--color-texto);
+      line-height: 1.6;
+      padding: 0 1rem;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
+      color: #000;
+      box-shadow: var(--sombra);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      color: var(--color-primario);
+      margin-top: 2rem;
+    }
+
+    .contenedor {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    .card {
+      background: #1e1e1e;
+      border-left: 5px solid var(--color-primario);
+      margin-bottom: 1.5rem;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: var(--sombra);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 0.6rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background: #000;
+      color: #aaa;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .card {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Buenas Prácticas DevOps</h1>
+    <p>Automatiza. Colabora. Mejora continuamente.</p>
+  </header>
+
+  <div class="contenedor">
+    <div class="card">
+      <h2>1. Integración Continua (CI)</h2>
+      <ul>
+        <li>Automatiza las pruebas unitarias y de integración.</li>
+        <li>Haz commits frecuentes para facilitar la detección de errores.</li>
+        <li>Usa pipelines para validar cada cambio.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>2. Entrega Continua (CD)</h2>
+      <ul>
+        <li>Despliega a entornos staging automáticamente.</li>
+        <li>Automatiza procesos de rollback en caso de fallas.</li>
+        <li>Usa feature flags para cambios progresivos.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>3. Infraestructura como Código (IaC)</h2>
+      <ul>
+        <li>Versiona tu infraestructura con Git.</li>
+        <li>Aplica cambios mediante pipelines.</li>
+        <li>Utiliza herramientas como Terraform o Ansible.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>4. Observabilidad</h2>
+      <ul>
+        <li>Monitorea logs, métricas y trazas en tiempo real.</li>
+        <li>Establece alertas proactivas.</li>
+        <li>Usa dashboards visuales para diagnósticos rápidos.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>5. Cultura DevOps</h2>
+      <ul>
+        <li>Promueve la colaboración entre Dev y Ops.</li>
+        <li>Fomenta la responsabilidad compartida.</li>
+        <li>Evalúa continuamente procesos y herramientas.</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 DevOps Academy · Hecho con 💻 y ☕
+  </footer>
+</body>
+</html>
